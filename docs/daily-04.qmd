@@ -1,7 +1,7 @@
 ---
 title: "ESS 330 Actvity 4"
 subtitle: "Meet R, Quarto, & Github"
-author: Mike Johnson
+author: Megan Hoover
 date: last-modified
 format:
   html:
@@ -85,8 +85,8 @@ Click the settings (wheel) icon next to `knit` to render the output document in 
 ```yaml
 ---
 title: "My First Quarto Document"
-author: "Your Name"
-date: today
+author: "Megan Hoover"
+date: 2/9/25
 format: html
 ---
 ```
@@ -196,7 +196,7 @@ library(tidyverse)
 
 # read in city data
 # Use the `tab` key to autocomplete paths!
-cities <- readr::read_csv('../data/simplemaps_uscities_basicv1.90/uscities.csv')
+cities <- readr::read_csv('C:/Users/Samho/Desktop/ESS330/github/exercise-04-csu/data/simplemaps_uscities_basicv1.90/uscities.csv')
 ```
 
 # Exploration
@@ -235,7 +235,7 @@ cities  |>
 threshold <- 10000
 
 big_cities <-  cities |> 
-  filter(population > threshold)  |> 
+  filter(population > 100000)  |> 
   filter(!state_name %in% c("Alaska", "Hawaii", "Puerto Rico"))
 ```
 
